@@ -1,6 +1,6 @@
 <?php
 try {
-    $db_connect = new PDO("mysql:host=localhost;dbname=your_db_name", "username", "password");
+    $db_connect = new PDO("mysql:host=vps100614.serveur-vps.net;dbname=c0wap1206", "c0wap", "KLgksxKv!R8");
     $db_connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reset_db'])) {
