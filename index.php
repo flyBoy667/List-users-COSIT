@@ -1,16 +1,18 @@
 <?php
-try {
-    $db_connect = new PDO("mysql:host=vps100614.serveur-vps.net;dbname=c0wap1206", "c0wap", "KLgksxKv!R8");
-    $db_connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// try {
+//     $db_connect = new PDO("mysql:host=vps100614.serveur-vps.net;dbname=c0wap1206", "c0wap", "KLgksxKv!R8");
+//     $db_connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reset_db'])) {
-        // Remplacez 'your_table_name' par le nom de votre table
-        $db_connect->exec("TRUNCATE TABLE your_table_name");
-        echo "Base de données réinitialisée avec succès.";
-    }
-} catch (PDOException $e) {
-    echo "Erreur : " . $e->getMessage();
-}
+//     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reset_db'])) {
+//         // Remplacez 'your_table_name' par le nom de votre table
+//         $db_connect->exec("TRUNCATE TABLE your_table_name");
+//         echo "Base de données réinitialisée avec succès.";
+//     }
+// } catch (PDOException $e) {
+//     echo "Erreur : " . $e->getMessage();
+// }
+
+
 ?>
 
 
